@@ -2,6 +2,7 @@ import EStyleSheet from 'react-native-extended-stylesheet';
 
 const styles = EStyleSheet.create({
   container: {
+    marginTop: 15,
     alignItems: 'center',
   },
   wrapper: {
