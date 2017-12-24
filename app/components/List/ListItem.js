@@ -1,9 +1,9 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { View, Text, TouchableHighlight } from 'react-native';
+import React from "react"
+import PropTypes from "prop-types"
+import { View, Text, TouchableHighlight } from "react-native"
 
-import styles from './styles';
-import Icon from './Icon';
+import styles from "./styles"
+import Icon from "./Icon"
 
 const ListItem = ({
   text,
@@ -25,7 +25,7 @@ const ListItem = ({
       {customIcon}
     </View>
   </TouchableHighlight>
-);
+)
 
 ListItem.propTypes = {
   text: PropTypes.string,
@@ -35,6 +35,6 @@ ListItem.propTypes = {
   visible: PropTypes.bool,
   customIcon: PropTypes.element,
   iconBackground: PropTypes.string,
-};
+}
 
-export default ListItem;
+export default ListItem

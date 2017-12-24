@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { ScrollView, StatusBar } from 'react-native';
+import React, { Component } from "react"
+import PropTypes from "prop-types"
+import { ScrollView, StatusBar } from "react-native"
 
-import EStyleSheet from 'react-native-extended-stylesheet';
+import EStyleSheet from "react-native-extended-stylesheet"
 
-import { ListItem, Separator } from '../components/List';
+import { ListItem, Separator } from "../components/List"
 
 const styles = EStyleSheet.create({
-  $blue: '$primaryBlue',
-  $green: '$primaryGreen',
-  $orange: '$primaryOrange',
-  $purple: '$primaryPurple',
-});
+  $blue: "$primaryBlue",
+  $green: "$primaryGreen",
+  $orange: "$primaryOrange",
+  $purple: "$primaryPurple",
+})
 
 class Themes extends Component {
   static propTypes = {
@@ -19,8 +19,8 @@ class Themes extends Component {
   };
 
   handleThemePress = (color) => {
-    console.log('press theme', color);
-    this.props.navigation.goBack();
+    console.log("press theme", color)
+    this.props.navigation.goBack()
   };
 
   render() {
@@ -63,8 +63,8 @@ class Themes extends Component {
         />
         <Separator />
       </ScrollView>
-    );
+    )
   }
 }
 
-export default Themes;
+export default Themes

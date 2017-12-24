@@ -1,20 +1,20 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { StatusBar, KeyboardAvoidingView } from 'react-native';
+import React, { Component } from "react"
+import PropTypes from "prop-types"
+import { StatusBar, KeyboardAvoidingView } from "react-native"
 
-import { Container } from '../components/Container';
-import { Logo } from '../components/Logo';
-import { InputWithButton } from '../components/TextInput';
-import { ClearButton } from '../components/Button';
-import { LastConverted } from '../components/Text';
-import { Header } from '../components/Header';
+import { Container } from "../components/Container"
+import { Logo } from "../components/Logo"
+import { InputWithButton } from "../components/TextInput"
+import { ClearButton } from "../components/Button"
+import { LastConverted } from "../components/Text"
+import { Header } from "../components/Header"
 
-const TEMP_BASE_CURRENCY = 'USD';
-const TEMP_QUOTE_CURRENCY = 'GBP';
-const TEMP_BASE_PRICE = '100';
-const TEMP_QUOTE_PRICE = '79.74';
-const TEMP_CONVERSION_RATE = 0.7974;
-const TEMP_CONVERSION_DATE = new Date();
+const TEMP_BASE_CURRENCY = "USD"
+const TEMP_QUOTE_CURRENCY = "GBP"
+const TEMP_BASE_PRICE = "100"
+const TEMP_QUOTE_PRICE = "79.74"
+const TEMP_CONVERSION_RATE = 0.7974
+const TEMP_CONVERSION_DATE = new Date()
 
 class Home extends Component {
   static propTypes = {
@@ -22,23 +22,23 @@ class Home extends Component {
   };
 
   handlePressBaseCurrency = () => {
-    console.log('press base currency');
-    this.props.navigation.navigate('CurrencyList', { title: 'Base currency' });
+    console.log("press base currency")
+    this.props.navigation.navigate("CurrencyList", { title: "Base currency" })
   };
 
   handlePressQuoteCurrency = () => {
-    console.log('press quote currency');
-    this.props.navigation.navigate('CurrencyList', { title: 'Quote Currency' });
+    console.log("press quote currency")
+    this.props.navigation.navigate("CurrencyList", { title: "Quote Currency" })
   };
   handleTextChange = (text) => {
-    console.log('change text', text);
+    console.log("change text", text)
   };
   handleSwapCurrency = () => {
-    console.log('press swap currency');
+    console.log("press swap currency")
   };
   handleOptionsPress = () => {
-    console.log('handle options press');
-    this.props.navigation.navigate('Options');
+    console.log("handle options press")
+    this.props.navigation.navigate("Options")
   };
 
   render() {
@@ -70,8 +70,8 @@ class Home extends Component {
           <ClearButton text="Reverse Currencies" onPress={this.handleSwapCurrency} />
         </KeyboardAvoidingView>
       </Container>
-    );
+    )
   }
 }
 
-export default Home;
+export default Home
