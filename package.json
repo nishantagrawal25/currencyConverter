@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "@expo/vector-icons": "^6.2.1",
     "babel-eslint": "^7.2.3",
+    "babel-preset-react-native": "^2.1.0",
+    "babel-preset-react-native-stage-0": "^1.0.1",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
